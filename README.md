@@ -35,7 +35,7 @@ Before setting up the project, ensure you have the following:
 
 ### Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/williamz6/flask-healthcare-application.git
 cd survey-app
 ```
 
