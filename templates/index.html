@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Flask Healthcare Survey</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Healthcare Survey</h1>
+        
+
+    <form action="" method="post">
+        
+       <label>Age:
+            <input type="number" name="age" min="0" required>
+        </label>
+
+
+        <label>Gender:
+            <select name="gender" required>
+                <option value="">-- select --</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </label>
+
+
+        <label>Total Monthly Income:
+            <input type="number" name="total_income" step="0.01" min="0" required>
+        </label>
+        
+
+        <fieldset>
+            <legend>Expenses — check category and enter amount</legend>
+
+            <div class="expense-row">
+                <input type="checkbox" id="utilities_cb" name="utilities_checkbox" class="checkbox">
+                <label for="utilities_cb">Utilities</label>
+                <input type="text" name="utilities_amount" placeholder="amount (e.g. 50.00)">
+            </div>
+
+            <div class="expense-row">
+                <input type="checkbox" id="entertainment_cb" name="entertainment_checkbox" class="checkbox">
+                <label for="entertainment_cb">Entertainment</label>
+                <input type="text" name="entertainment_amount" placeholder="amount">
+            </div>
+
+            <div class="expense-row">
+                <input type="checkbox" id="school_fees_cb" name="school_fees_checkbox" class="checkbox">
+                <label for="school_fees_cb">School Fees</label>
+                <input type="text" name="school_fees_amount" placeholder="amount">
+            </div>
+
+            <div class="expense-row">
+                <input type="checkbox" id="shopping_cb" name="shopping_checkbox" class="checkbox">
+                <label for="shopping_cb">Shopping</label>
+                <input type="text" name="shopping_amount" placeholder="amount">
+            </div>
+
+            <div class="expense-row">
+                <input type="checkbox" id="healthcare_cb" name="healthcare_checkbox" class="checkbox">
+                <label for="healthcare_cb">Healthcare</label>
+                <input type="text" name="healthcare_amount" placeholder="amount">
+            </div>
+    </fieldset>
+        <div>
+            <button  type="submit">Submit</button>
+        </div>
+    </form>
+
+    </div>
+</body>
+</html>

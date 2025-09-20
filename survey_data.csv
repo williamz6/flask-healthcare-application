@@ -1,0 +1,4 @@
+age,gender,total_income,utilities,entertainment,school_fees,shopping,healthcare
+20,Male,200000.0,10000.0,5000.0,0,20000.0,7500.0
+30,Male,600000.0,50000.0,25000.0,0,50000.0,17000.0
+25,Male,400000.0,0,0,250000.0,25000.0,17000.0
